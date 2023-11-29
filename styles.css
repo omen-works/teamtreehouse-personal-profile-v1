@@ -23,15 +23,6 @@ a:hover {
 
 /* Section Styles */
 
-/* .main-nav {
-  width: 100%;
-  background-image: linear-gradient(45deg, #12c2e9,#c471ed,#f64f59);
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-} */
-
 .main-nav {
   width: 100%;
   background: linear-gradient(to right, #fdc830, #f37335);
@@ -54,15 +45,19 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    font-size: larger;
+    text-transform: uppercase;
 }
 .nav li {
   padding: 5px 6px 6px 6px;
 }
 .nav a {
   transition: all .5s;
+  color: white;
 }
 .nav a:hover {
-  color: white
+  color: rgba(228, 228, 228, 0.75);
+  border-bottom: 1px solid #fff;
 }
 
 header {
@@ -94,8 +89,8 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(58,57,57,0.8);
+  color: #ff9904;
 }
 .card {
   margin: 30px;
@@ -174,6 +169,20 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+.quote {
+  margin: 0;
+  background: #eee;
+  padding: 1em;
+  border-radius: 1em;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption cite a:hover {
+  color: #f37335;
 }
 
 /* Styles for larger screens */
