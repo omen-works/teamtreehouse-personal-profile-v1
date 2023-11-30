@@ -73,12 +73,17 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: 1s ease;
+  filter: grayscale(0);
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(10deg);
+  border-radius: 50%;
+  border: 3px solid #f37335;
+  transition: 1s ease;
+  filter: grayscale(1);
 }
 .tag {
   background-color: rgba(58,57,57,0.8);
@@ -118,6 +123,28 @@ header .profile-image:hover {
 }
 .page:hover {
   border-color: #f37335;
+}
+
+.article {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 900px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.article:hover {
+  border-color: #f37335;
+}
+.article a:hover {
+  color: #f37335;
+}
+.article .article-image {
+  width: 100%;
+  border: 3px solid white;
+  transition: all .5s;
 }
 
 .about {
@@ -210,7 +237,7 @@ a.social:hover {
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
-      max-width: 1200px;
+      max-width: 1400px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
@@ -221,7 +248,7 @@ a.social:hover {
   }
 
   .nav {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 0 30px;
   }
 
@@ -236,7 +263,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto;
   }
 
